@@ -4,6 +4,27 @@ set nocompatible
 syntax on
 
 filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/tComment'
+Plugin 'rking/ag.vim'
+Plugin 'wincent/command-t'
+Plugin 'tpope/vim-fugitive'
+
+" Ruby
+Plugin 'tpope/vim-endwise'
+Plugin 'vim-ruby/vim-ruby'
+
+" Clojure
+Plugin 'guns/vim-clojure-static'
+Plugin 'kien/rainbow_parentheses.vim'
+
+call vundle#end()
+
 call pathogen#infect()
 filetype plugin indent on
 
